@@ -1,0 +1,7 @@
+instrucciones.md
+node_modules/
+dist/
+.vite/
+*.local
+.DS_Store
+npm-debug.log*
