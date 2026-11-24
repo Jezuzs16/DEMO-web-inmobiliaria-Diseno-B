@@ -11,9 +11,9 @@ const photo = (id: string, width = 1400) => {
 
 /** Datos de contacto de demostración: reemplazar por los reales del cliente. */
 export const CONTACT = {
-  whatsapp: '584121234567',
-  email: 'contacto@negociosglobales.com',
-  phone: '+58 412 123 4567',
+  whatsapp: '584249394316',
+  email: 'jesusleandro16@gmail.com',
+  phone: '+58 424 939 4316',
   address: 'Puerto Ordaz, Estado Bolívar, Venezuela',
 } as const;
 

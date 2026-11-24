@@ -1,12 +1,8 @@
 import { useMemo, useRef, type FormEvent } from 'react';
 import {
-  Bath,
-  BedDouble,
-  CarFront,
   ChevronDown,
   Search,
-  ShieldCheck,
-  Umbrella,
+  ShieldCheck
 } from 'lucide-react';
 import { gsap, useGSAP } from '../../../lib/gsap';
 import { SplitRevealText } from '../../../components/react-bits/SplitRevealText';
@@ -262,46 +258,8 @@ export function HeroSection() {
               <div className="relative flex h-full flex-col justify-between p-6 sm:p-8">
                 <div className="flex justify-end">
                   <span className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-brand-cyan/95 px-3 py-2 text-[10px] font-bold uppercase tracking-[0.1em] text-white shadow-lg">
-                    <ShieldCheck size={15} /> 100% Compra Segura • Verificada Legalmente
+                    <ShieldCheck size={15} /> 100% Compra Segura • Verificada
                   </span>
-                </div>
-
-                <div className="text-center">
-                  <p className="text-xs font-bold uppercase tracking-[0.35em] text-white sm:text-sm">
-                    Townhouse en Terrazas
-                  </p>
-                  <p className="font-display text-[clamp(2.75rem,7vw,5rem)] font-extrabold leading-none text-brand-yellow">
-                    ATLÁNTICO
-                  </p>
-                  <p className="mt-2 text-xs font-semibold uppercase tracking-[0.3em] text-white sm:text-sm">
-                    Conjunto Residencial
-                  </p>
-                </div>
-
-                <div className="rounded-2xl border border-white/25 bg-white/10 p-4 backdrop-blur-md">
-                  <div className="grid grid-cols-4 gap-2 text-center">
-                    {[
-                      { icon: Umbrella, label: 'Patio' },
-                      { icon: BedDouble, label: '3 Habitaciones' },
-                      { icon: CarFront, label: '2 Puesto' },
-                      { icon: Bath, label: '3 Baños' },
-                    ].map(({ icon: Icon, label }) => (
-                      <div key={label} className="flex flex-col items-center gap-1.5">
-                        <Icon size={19} className="text-brand-yellow" />
-                        <span className="text-[9px] font-semibold leading-tight text-white sm:text-[10px]">
-                          {label}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="mt-4 flex items-center justify-between border-t border-white/20 pt-3">
-                    <span className="text-left text-[10px] uppercase tracking-wider text-white/70">
-                      {featured.id} · Puerto Ordaz
-                    </span>
-                    <span className="font-display text-lg font-extrabold text-brand-yellow">
-                      $85,000
-                    </span>
-                  </div>
                 </div>
               </div>
             </div>
